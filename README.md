@@ -22,6 +22,7 @@ w - stores the gradient of the loss with respect to w.
 b - stores the gradient of the loss with respect to the bias term.
 
 Forward Pass Layer Visualizations:
+
 <img width="553" alt="image" src="https://github.com/abhishek-1131/NumPyCNN-OCR/assets/47984097/5166b457-3e0d-4318-8ee3-fb2f01d0a628">
 
 
