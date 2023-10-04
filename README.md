@@ -4,17 +4,6 @@ Minimal CNN for OCR from scratch in NumPy, covering architecture, training, back
 ### Architecture
 A simple architecture based on a very popular network called the LeNet (http://ieeexplore.ieee.org/abstract/document/726791/)
 
-Input - 1×28×28
-Convolution - k = 5, s = 1, p = 0, 20 filters
-ReLU
-MAXPooling - k=2, s=2, p=0
-Convolution - k = 5, s = 1, p = 0, 50 filters
-ReLU
-MAXPooling - k=2, s=2, p=0
-Fully Connected layer - 500 neurons
-ReLU
-Loss layer
-
 ### Data structures
 We define four main data structures to help us implement the Convolutional Neural Network which are explained in the following section. Each layer is defined by a data structure, where the field type determines the type of the layer. This field can take the values of DATA, CONV, POOLING, IP, RELU, LOSS which correspond to data, convolution, max-pooling layers, inner-product/ fully connected, ReLU and Loss layers respectively. The fields in each of the layer will depend on the type of layer.
 
@@ -31,4 +20,8 @@ b - bias
 param_grad is used to store the gradients coupled at each layer with the following properties:							
 w - stores the gradient of the loss with respect to w.
 b - stores the gradient of the loss with respect to the bias term.
+
+Forward Pass Layer Visualizations:
+<img width="553" alt="image" src="https://github.com/abhishek-1131/NumPyCNN-OCR/assets/47984097/5166b457-3e0d-4318-8ee3-fb2f01d0a628">
+
 
